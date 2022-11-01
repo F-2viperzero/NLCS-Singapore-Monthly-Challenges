@@ -1,0 +1,12 @@
+#counter to count the number of 4-letter words
+counter = 0
+#repeat 200 times
+for x in range(200): #There was a typo in the instructions. The tests contain 200 names, not 500. Sorry!
+  #ask for a name
+  name = input("")
+  #if a name is 5 letters or more
+  if len(name) >= 5:
+    #add one to counter
+    counter = counter + 1
+#print total
+print(counter)
