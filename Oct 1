@@ -1,0 +1,12 @@
+#makes a thing that counts the total. it starts with 0
+total = 0
+
+#makes a command that repeats 10 times
+for x in range(10):
+  #get the number
+  num = int(input())
+  #add the number to the total, every time
+  total = total + num
+
+#prints the total divided by ten = average
+print(total/10)
