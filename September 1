@@ -1,0 +1,29 @@
+#enter the number
+decimal_input = int(input())
+
+#make a function that Converts the decimal into binary
+def decimal_binary(decimal):
+  # makes dec decimal.
+  dec = decimal
+  #makes a string
+  dec_string = ""
+  #checks each digit with the function below
+  dec_string+= str(check_odd_even(dec))
+  while dec != 1:
+    dec = dec // 2
+    #adds the 1 or the 0, 1
+    dec_string+= str(check_odd_even(dec)) 
+    #reverses from the -1th digit
+  reverse_string = dec_string [::-1]
+  #prints the line above
+  print(reverse_string)
+
+#the function to check if the input is a multiple of two or not.
+def check_odd_even(decimal):
+  if decimal % 2 == 0:
+    return 0
+  return 1
+
+#does the function.
+decimal_binary(decimal_input)
+
