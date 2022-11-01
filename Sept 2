@@ -1,0 +1,4 @@
+#enter pin
+pin = str(input())
+#prints 12 *s and the digits from digit 12 to the end.
+print("************" + pin[12:])
