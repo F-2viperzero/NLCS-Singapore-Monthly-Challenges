@@ -1,0 +1,15 @@
+#makes an array that lists all the names
+names = []
+
+#repeats as many times as in the brackets
+for x in range(200):
+  #asks for a name
+  name = input("")
+  #adds the name to the names array
+  names.append(name)
+
+#counts the amount of Joys in the names array
+nc = names.count("Joy")
+
+#prints the number
+print(nc)
